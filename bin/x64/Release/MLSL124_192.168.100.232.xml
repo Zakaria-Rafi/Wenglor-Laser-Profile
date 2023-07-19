@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<device>
+   <general>
+      <ordernumber>MLSL124</ordernumber>
+      <productversion>D</productversion>
+      <producer>wenglor sensoric GmbH</producer>
+      <description>2D-/3D-profile sensors</description>
+      <hardwareversion>
+         <general>D</general>
+      </hardwareversion>
+      <firmwareversion>
+         <general>2.2.0</general>
+      </firmwareversion>
+      <serialnumber>20493</serialnumber>
+      <mac>54:4a:05:0a:33:8c</mac>
+      <workingrange_z_start>100.0</workingrange_z_start>
+      <measuringrange_z>400.0</measuringrange_z>
+      <fieldwidth_x_start>70.0</fieldwidth_x_start>
+      <fieldwidth_x_end>280.0</fieldwidth_x_end>
+      <calibration>2022-06-20 11:55:22</calibration>
+      <pixel_x_max>1280</pixel_x_max>
+      <pixel_z_max>1024</pixel_z_max>
+      <lininfo>7</lininfo>
+      <networklink>1000</networklink>
+      <networklinkmode>1</networklinkmode>
+      <networkload>2669636</networkload>
+      <networkbuffer>0</networkbuffer>
+      <framesize>9344</framesize>
+      <encoder_htl>0</encoder_htl>
+      <savedencoder_htl>0</savedencoder_htl>
+      <encoder_ttl_rs422>1</encoder_ttl_rs422>
+      <savedencoder_ttl_rs422>0</savedencoder_ttl_rs422>
+      <usrio>
+         <ea1>
+            <function>5</function>
+            <state>1</state>
+         </ea1>
+         <ea2>
+            <function>5</function>
+            <state>1</state>
+         </ea2>
+         <ea3>
+            <function>2</function>
+            <state>0</state>
+         </ea3>
+         <ea4>
+            <function>1</function>
+            <state>1</state>
+         </ea4>
+      </usrio>
+      <ttl_rs422>
+         <en_a>
+            <state>1</state>
+         </en_a>
+         <en_b>
+            <state>1</state>
+         </en_b>
+         <en_0>
+            <state>1</state>
+         </en_0>
+      </ttl_rs422>
+      <onoffcounter>163</onoffcounter>
+      <ontimecounter>5058829</ontimecounter>
+      <temperatur>40</temperatur>
+      <scannerstatus>95</scannerstatus>
+      <help></help>
+   </general>
+   <settings>
+      <name>
+         <current>3</current>
+         <help>show requested descriptors [0=default|1=Set1|2=Set2|3=current</help>
+      </name>
+      <userstring>
+         <current></current>
+         <command>SetUserString</command>
+         <help>describe your own laser scanner</help>
+      </userstring>
+      <protocol>
+         <profile>
+            <signal>
+               <enable>
+                  <current>1</current>
+                  <default>1</default>
+                  <command>SetSignalEnable</command>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <parameter>3</parameter>
+                  <help>"1: Signal1 2: Signal2 3: Signal1+Signal2"</help>
+               </enable>
+               <content>
+                  <z>
+                     <current>1</current>
+                     <default>1</default>
+                     <command>SetSignalContentZ</command>
+                     <width>16</width>
+                     <parameter>1</parameter>
+                     <parameter>0</parameter>
+                     <help>"0: disabled 1: ennabled"</help>
+                  </z>
+                  <strength>
+                     <current>1</current>
+                     <default>1</default>
+                     <command>SetSignalContentStrength</command>
+                     <width>8</width>
+                     <parameter>1</parameter>
+                     <parameter>0</parameter>
+                     <help>"0: disabled 1: ennabled"</help>
+                  </strength>
+                  <width>
+                     <current>1</current>
+                     <default>1</default>
+                     <command>SetSignalContentWidth</command>
+                     <width>6</width>
+                     <parameter>1</parameter>
+                     <parameter>0</parameter>
+                     <help>"0: disabled 1: ennabled"</help>
+                  </width>
+                  <reserved>
+                     <current>1</current>
+                     <default>1</default>
+                     <command>SetSignalContentReserved</command>
+                     <width>16</width>
+                     <parameter>1</parameter>
+                     <parameter>0</parameter>
+                     <help>"0: disabled 1: ennabled"</help>
+                  </reserved>
+               </content>
+            </signal>
+         </profile>
+      </protocol>
+      <acquisitionlinetime>
+         <current>1666</current>
+         <default>5000</default>
+         <command>SetAcquisitionLineTime</command>
+         <min>170</min>
+         <max></max>
+         <parameter></parameter>
+         <help>"full time for one profile in us"</help>
+      </acquisitionlinetime>
+      <camerarunning>
+         <current>1</current>
+         <default>0</default>
+         <command>SetCameraRunning</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>""</help>
+      </camerarunning>
+      <operatingmode>
+         <current>0</current>
+         <default>0</default>
+         <command>SetOperatingMode</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>"0=sensor profile, 1=raw picture"</help>
+      </operatingmode>
+      <heartbeat>
+         <current>0</current>
+         <default>0</default>
+         <command>SetHeartBeat</command>
+         <parameter>0</parameter>
+         <parameter>1000</parameter>
+         <help>"time in ms"</help>
+      </heartbeat>
+      <socketconnectiontimeout>
+         <current>0</current>
+         <default>0</default>
+         <command>SetSocketConnectionTimeout</command>
+         <parameter>0</parameter>
+         <parameter>3000</parameter>
+         <help>"device ethernet connection: rx-tx-timeout in ms"</help>
+      </socketconnectiontimeout>
+      <triggersource>
+         <current>0</current>
+         <default>0</default>
+         <command>SetTriggerSource</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <parameter>2</parameter>
+         <help>"0: intern, 1: sync_in 2: encoder 3: software"</help>
+      </triggersource>
+      <triggeramountprofilesy>
+         <current>-1</current>
+         <default>-1</default>
+         <command>SetTriggerAmountProfilesY</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <parameter>2</parameter>
+         <help>"0: intern, 1: sync_in 2: encoder"</help>
+      </triggeramountprofilesy>
+      <amountprofilesy>
+         <current>0</current>
+         <default>0</default>
+         <command>SetAmountProfilesY</command>
+         <min>0</min>
+         <parameter>0</parameter>
+         <parameter>10</parameter>
+         <parameter>100</parameter>
+         <help>"Amount of Profiles with selected trigger source"</help>
+      </amountprofilesy>
+      <triggerencoderstep>
+         <current>0</current>
+         <default>0</default>
+         <command>SetTriggerEncoderStep</command>
+         <min>0</min>
+         <parameter>0</parameter>
+         <parameter>10</parameter>
+         <parameter>100</parameter>
+         <help>"in counter steps"</help>
+      </triggerencoderstep>
+      <triggerdelay>
+         <current>0</current>
+         <default>0</default>
+         <command>SetTriggerDelay</command>
+         <min>0</min>
+         <max>0</max>
+         <parameter>0</parameter>
+         <parameter>100</parameter>
+         <help>"in us"</help>
+      </triggerdelay>
+      <exposuretime>
+         <current>500</current>
+         <default>150</default>
+         <command>SetExposureTime</command>
+         <min>1</min>
+         <parameter>0</parameter>
+         <parameter>100</parameter>
+         <help>"in us"</help>
+      </exposuretime>
+      <laseractive>
+         <current>1</current>
+         <default>0</default>
+         <command>SetLaserActive</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>"1: laser activated; 0: laser deactivated; global software function for enable/disable laser"</help>
+      </laseractive>
+      <laserpwm>
+         <current>255</current>
+         <default>0</default>
+         <command>SetLaserPWM</command>
+         <min>0</min>
+         <max>255</max>
+         <parameter>0</parameter>
+         <parameter>150</parameter>
+         <parameter>200</parameter>
+         <parameter>255</parameter>
+         <help>"laser pwm is valid only for 3B laser producrs"</help>
+      </laserpwm>
+      <laserpwmdisablemode>
+         <current>1</current>
+         <default>1</default>
+         <command>SetLaserPWMDisableMode</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>"0: laser pwm is disabled if no connection, 1: laser pwm is always enabled"</help>
+      </laserpwmdisablemode>
+      <roi>
+         <roizmm>
+            <command>"command not set"</command>
+            <help>"SetROI1Z_mm=top,bottom"</help>
+         </roizmm>
+         <x1>
+            <width>
+               <current>1280</current>
+               <default>1280</default>
+               <command>SetROI1WidthX</command>
+               <min>1</min>
+               <max>1280</max>
+               <parameter>1</parameter>
+               <parameter>1280</parameter>
+               <help>"Amount of camera rows to readout"</help>
+            </width>
+            <offset>
+               <current>0</current>
+               <default>0</default>
+               <command>SetROI1OffsetX</command>
+               <min>0</min>
+               <max>1279</max>
+               <parameter>0</parameter>
+               <parameter>1279</parameter>
+               <help>""</help>
+            </offset>
+            <step>
+               <current>0</current>
+               <default>0</default>
+               <command>SetROI1StepX</command>
+               <min>0</min>
+               <max>1279</max>
+               <parameter>0</parameter>
+               <parameter>1279</parameter>
+               <help>""</help>
+            </step>
+         </x1>
+         <z1>
+            <height>
+               <current>336</current>
+               <default>1024</default>
+               <command>SetROI1HeightZ</command>
+               <min>32</min>
+               <max>1024</max>
+               <parameter>32</parameter>
+               <parameter>1024</parameter>
+               <help>"Amount of camera lines to readout"</help>
+            </height>
+            <offset>
+               <current>350</current>
+               <default>0</default>
+               <command>SetROI1OffsetZ</command>
+               <min>0</min>
+               <max>1023</max>
+               <parameter>0</parameter>
+               <parameter>1023</parameter>
+               <help>""</help>
+            </offset>
+            <step>
+               <current>0</current>
+               <default>0</default>
+               <command>SetROI1StepZ</command>
+               <min>0</min>
+               <max>1</max>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>""</help>
+            </step>
+         </z1>
+      </roi>
+      <syncout>
+         <current>1000</current>
+         <default>0</default>
+         <command>SetSyncOut</command>
+         <min>0</min>
+         <parameter>0</parameter>
+         <parameter>100</parameter>
+         <help>"in us"</help>
+      </syncout>
+      <syncoutdelay>
+         <current>600</current>
+         <default>0</default>
+         <command>SetSyncOutDelay</command>
+         <min>0</min>
+         <parameter>0</parameter>
+         <parameter>100</parameter>
+         <help>"in us"</help>
+      </syncoutdelay>
+      <signalwidthmin>
+         <current>0</current>
+         <default>0</default>
+         <command>SetSignalWidthMin</command>
+         <min>0</min>
+         <max>63</max>
+         <parameter>0</parameter>
+         <parameter>3</parameter>
+         <help>"signal width filter"</help>
+      </signalwidthmin>
+      <signalwidthmax>
+         <current>63</current>
+         <default>63</default>
+         <command>SetSignalWidthMax</command>
+         <min>0</min>
+         <max>63</max>
+         <parameter>5</parameter>
+         <parameter>10</parameter>
+         <help>"signal width filter"</help>
+      </signalwidthmax>
+      <signalstrengthmin>
+         <current>10</current>
+         <default>0</default>
+         <command>SetSignalStrengthMin</command>
+         <min>0</min>
+         <max>1023</max>
+         <parameter>100</parameter>
+         <parameter>200</parameter>
+         <help>"signal strength filter"</help>
+      </signalstrengthmin>
+      <signalselection>
+         <current>1</current>
+         <default>1</default>
+         <command>SetSignalSelection</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <parameter>2</parameter>
+         <parameter>3</parameter>
+         <help>"0=top(first), 1=strong, 2=width, 3=bottom(last)"</help>
+      </signalselection>
+      <linearization>
+         <current>0</current>
+         <default>0</default>
+         <command>SetLinearizationMode</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>"0=off(linearization on host), 1=on(linearization on device)"</help>
+      </linearization>
+      <sortx>
+         <current>0</current>
+         <default>0</default>
+         <command>SetSortX</command>
+         <parameter>0</parameter>
+         <parameter>1</parameter>
+         <help>"0=disabled, 1=enabled will be done in the host library"</help>
+      </sortx>
+      <encoder>
+         <triggerfunction>
+            <current>2</current>
+            <default>0</default>
+            <command>SetEncoderTriggerFunction</command>
+            <parameter>0</parameter>
+            <parameter>1</parameter>
+            <help>"0: DirectionUp 1: DirectionDown 2: Motion 3: PostionUp 4: PositionDown"</help>
+         </triggerfunction>
+         <countdirection>
+            <current>0</current>
+            <default>0</default>
+            <command>SetEncoderCountDirection</command>
+            <parameter>0</parameter>
+            <parameter>1</parameter>
+            <help>"0: normal 1: invert"</help>
+         </countdirection>
+      </encoder>
+      <autoexposuretimeregulation>
+         <autoexposuremode>
+            <current>0</current>
+            <default>0</default>
+            <command>SetAutoExposureMode</command>
+            <parameter>0</parameter>
+            <parameter>1</parameter>
+            <help>"0: AutoRegulation off 1: AutoRegulation on"</help>
+         </autoexposuremode>
+         <autoexposuretimemin>
+            <current>10</current>
+            <default>10</default>
+            <command>SetAutoExposureTimeMin</command>
+            <parameter>0</parameter>
+            <parameter>10000</parameter>
+            <help>"exposure time min value"</help>
+         </autoexposuretimemin>
+         <autoexposuretimemax>
+            <current>1000</current>
+            <default>1000</default>
+            <command>SetAutoExposureTimeMax</command>
+            <parameter>8</parameter>
+            <parameter>10000</parameter>
+            <help>"exposure time max value"</help>
+         </autoexposuretimemax>
+         <autoexposureintensityrangemin>
+            <current>450</current>
+            <default>450</default>
+            <command>SetAutoExposureIntensityRangeMin</command>
+            <parameter>0</parameter>
+            <parameter>1023</parameter>
+            <help>"auto regulation range min value"</help>
+         </autoexposureintensityrangemin>
+         <autoexposureintensityrangemax>
+            <current>500</current>
+            <default>500</default>
+            <command>SetAutoExposureIntensityRangeMax</command>
+            <parameter>0</parameter>
+            <parameter>1023</parameter>
+            <help>"auto regulation range max value"</help>
+         </autoexposureintensityrangemax>
+         <autoexposurerangexoffset>
+            <current>64</current>
+            <default>64</default>
+            <command>SetAutoExposureRangeXMin</command>
+            <parameter>0</parameter>
+            <parameter>1279</parameter>
+            <help>"auto regulation x range offset value"</help>
+         </autoexposurerangexoffset>
+         <autoexposurerangexwidth>
+            <current>1215</current>
+            <default>1215</default>
+            <command>SetAutoExposureRangeXMax</command>
+            <parameter>0</parameter>
+            <parameter>1279</parameter>
+            <help>"auto regulation x range width value"</help>
+         </autoexposurerangexwidth>
+      </autoexposuretimeregulation>
+      <hdr>
+         <profilesnumber>
+            <current>0</current>
+            <default>0</default>
+            <command>SetHDR</command>
+            <parameter>0</parameter>
+            <parameter>1</parameter>
+            <help>"0: disabled(normal mode) 1: x-Scan=ExpTime1, (x+1)-Scan=ExpTime2 2: (x, x+1)-Scan=ExpTime1, (x+2, x+3)-Scan=ExpTime2"</help>
+         </profilesnumber>
+         <exposuretime>
+            <current>500</current>
+            <default>150</default>
+            <command>SetExposureTime</command>
+            <min>1</min>
+            <parameter>0</parameter>
+            <parameter>100</parameter>
+            <help>"in us"</help>
+         </exposuretime>
+         <exposuretime2>
+            <current>81</current>
+            <default>81</default>
+            <command>SetExposureTime2</command>
+            <min>1</min>
+            <parameter>0</parameter>
+            <parameter>100</parameter>
+            <help>"in us"</help>
+         </exposuretime2>
+      </hdr>
+      <analogoutput>
+         <mode>
+            <current>0</current>
+            <default>0</default>
+            <command>SetAnalogOutputMode</command>
+            <parameter>0</parameter>
+            <parameter>1</parameter>
+            <parameter>2</parameter>
+            <help>"0: disabled 1: voltage(0-10V) 2: current(4-20mA)"</help>
+         </mode>
+         <value>
+            <current>0</current>
+            <default>0</default>
+            <command>SetAnalogOutputValue</command>
+            <parameter>0</parameter>
+            <parameter>65535</parameter>
+            <help>"16 Bit analog output value"</help>
+         </value>
+      </analogoutput>
+      <usrio>
+         <ea1>
+            <function>
+               <current>5</current>
+               <default>5</default>
+               <command>SetEA1Function</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <parameter>4</parameter>
+               <parameter>5</parameter>
+               <help>"1: sync_in 2: sync_out 3: input 4; output 5: encoder_ab"</help>
+            </function>
+            <functionlaseroff>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1FunctionLaserOff</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionlaseroff>
+            <functionprofileenable>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1FunctionProfileEnable</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionprofileenable>
+            <functioninputcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1FunctionInputCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functioninputcounter>
+            <functionresetcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1FunctionResetCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, dependency resetcounter xml-section"</help>
+            </functionresetcounter>
+            <functionfixedframenumberfinishsignal>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1FunctionFixedFrameNumberFinishSignal</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, syncout signal in fixed frame mode at the end of all profiles(numbers)"</help>
+            </functionfixedframenumberfinishsignal>
+            <inputfunction>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA1InputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: Ub inactive 1: Ub active"</help>
+            </inputfunction>
+            <inputfunctionload>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1InputLoad</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: input load disabled 0mA 1: input load enabled 2mA"</help>
+            </inputfunctionload>
+            <output>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA1Output</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <help>"1: push pull 2: pnp 3: npn"</help>
+            </output>
+            <outputfunction>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA1OutputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: NO 1: NC"</help>
+            </outputfunction>
+            <resetcounter>
+               <repeat>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterRepeat</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: disabled 1: once 2: always"</help>
+               </repeat>
+               <signaledge>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterSignaledge</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: both 1: rising 2: falling"</help>
+               </signaledge>
+               <basetimecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterBaseTimeCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </basetimecounter>
+               <picturecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterPictureCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </picturecounter>
+               <encoder_htl>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterEncoderHTL</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_htl>
+               <encoder_ttl_rs422>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterEncoderTTLRS422</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_ttl_rs422>
+               <fixedframecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterFixedFrameCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </fixedframecounter>
+               <inputcounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA1ResetCounterInputCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </inputcounter>
+               <help>"dependency ea functionresetcounter xml-section"</help>
+            </resetcounter>
+         </ea1>
+         <ea2>
+            <function>
+               <current>5</current>
+               <default>5</default>
+               <command>SetEA2Function</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <parameter>4</parameter>
+               <parameter>5</parameter>
+               <help>"1: sync_in 2: sync_out 3: input 4; output 5: encoder_ab"</help>
+            </function>
+            <functionlaseroff>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2FunctionLaserOff</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionlaseroff>
+            <functionprofileenable>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2FunctionProfileEnable</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionprofileenable>
+            <functioninputcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2FunctionInputCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functioninputcounter>
+            <functionresetcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2FunctionResetCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, dependency resetcounter xml-section"</help>
+            </functionresetcounter>
+            <functionfixedframenumberfinishsignal>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2FunctionFixedFrameNumberFinishSignal</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, syncout signal in fixed frame mode at the end of all profiles(numbers)"</help>
+            </functionfixedframenumberfinishsignal>
+            <inputfunction>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA2InputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: Ub inactive 1: Ub active"</help>
+            </inputfunction>
+            <inputfunctionload>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2InputLoad</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: input load disabled 0mA 1: input load enabled 2mA"</help>
+            </inputfunctionload>
+            <output>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA2Output</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <help>"1: push pull 2: pnp 3: npn"</help>
+            </output>
+            <outputfunction>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA2OutputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: NO 1: NC"</help>
+            </outputfunction>
+            <resetcounter>
+               <repeat>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterRepeat</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: disabled 1: once 2: always"</help>
+               </repeat>
+               <signaledge>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterSignaledge</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: both 1: rising 2: falling"</help>
+               </signaledge>
+               <basetimecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterBaseTimeCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </basetimecounter>
+               <picturecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterPictureCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </picturecounter>
+               <encoder_htl>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterEncoderHTL</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_htl>
+               <encoder_ttl_rs422>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterEncoderTTLRS422</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_ttl_rs422>
+               <fixedframecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterFixedFrameCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </fixedframecounter>
+               <inputcounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA2ResetCounterInputCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </inputcounter>
+               <help>"dependency ea functionresetcounter xml-section"</help>
+            </resetcounter>
+         </ea2>
+         <ea3>
+            <function>
+               <current>2</current>
+               <default>2</default>
+               <command>SetEA3Function</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <parameter>4</parameter>
+               <help>"1: sync_in 2: sync_out 3: input 4; output"</help>
+            </function>
+            <functionlaseroff>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3FunctionLaserOff</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionlaseroff>
+            <functionprofileenable>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3FunctionProfileEnable</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionprofileenable>
+            <functioninputcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3FunctionInputCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functioninputcounter>
+            <functionresetcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3FunctionResetCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, dependency resetcounter xml-section"</help>
+            </functionresetcounter>
+            <functionfixedframenumberfinishsignal>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3FunctionFixedFrameNumberFinishSignal</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, syncout signal in fixed frame mode at the end of all profiles(numbers)"</help>
+            </functionfixedframenumberfinishsignal>
+            <inputfunction>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA3InputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: Ub inactive 1: Ub active"</help>
+            </inputfunction>
+            <inputfunctionload>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3InputLoad</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: input load disabled 0mA 1: input load enabled 2mA"</help>
+            </inputfunctionload>
+            <output>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA3Output</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <help>"1: push pull 2: pnp 3: npn"</help>
+            </output>
+            <outputfunction>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA3OutputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: NO 1: NC"</help>
+            </outputfunction>
+            <resetcounter>
+               <repeat>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterRepeat</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: disabled 1: once 2: always"</help>
+               </repeat>
+               <signaledge>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterSignaledge</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: both 1: rising 2: falling"</help>
+               </signaledge>
+               <basetimecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterBaseTimeCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </basetimecounter>
+               <picturecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterPictureCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </picturecounter>
+               <encoder_htl>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterEncoderHTL</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_htl>
+               <encoder_ttl_rs422>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterEncoderTTLRS422</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_ttl_rs422>
+               <fixedframecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterFixedFrameCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </fixedframecounter>
+               <inputcounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA3ResetCounterInputCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </inputcounter>
+               <help>"dependency ea functionresetcounter xml-section"</help>
+            </resetcounter>
+         </ea3>
+         <ea4>
+            <function>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA4Function</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <parameter>4</parameter>
+               <help>"1: sync_in 2: sync_out 3: input 4; output"</help>
+            </function>
+            <functionlaseroff>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4FunctionLaserOff</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionlaseroff>
+            <functionprofileenable>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4FunctionProfileEnable</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functionprofileenable>
+            <functioninputcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4FunctionInputCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled"</help>
+            </functioninputcounter>
+            <functionresetcounter>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4FunctionResetCounter</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, dependency resetcounter xml-section"</help>
+            </functionresetcounter>
+            <functionfixedframenumberfinishsignal>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4FunctionFixedFrameNumberFinishSignal</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: disabled 1: enabled, syncout signal in fixed frame mode at the end of all profiles(numbers)"</help>
+            </functionfixedframenumberfinishsignal>
+            <inputfunction>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA4InputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: Ub inactive 1: Ub active"</help>
+            </inputfunction>
+            <inputfunctionload>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4InputLoad</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: input load disabled 0mA 1: input load enabled 2mA"</help>
+            </inputfunctionload>
+            <output>
+               <current>1</current>
+               <default>1</default>
+               <command>SetEA4Output</command>
+               <parameter>1</parameter>
+               <parameter>2</parameter>
+               <parameter>3</parameter>
+               <help>"1: push pull 2: pnp 3: npn"</help>
+            </output>
+            <outputfunction>
+               <current>0</current>
+               <default>0</default>
+               <command>SetEA4OutputFunction</command>
+               <parameter>0</parameter>
+               <parameter>1</parameter>
+               <help>"0: NO 1: NC"</help>
+            </outputfunction>
+            <resetcounter>
+               <repeat>
+                  <current>2</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterRepeat</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: disabled 1: once 2: always"</help>
+               </repeat>
+               <signaledge>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterSignaledge</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <parameter>2</parameter>
+                  <help>"0: both 1: rising 2: falling"</help>
+               </signaledge>
+               <basetimecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterBaseTimeCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </basetimecounter>
+               <picturecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterPictureCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </picturecounter>
+               <encoder_htl>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterEncoderHTL</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_htl>
+               <encoder_ttl_rs422>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterEncoderTTLRS422</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </encoder_ttl_rs422>
+               <fixedframecounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterFixedFrameCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </fixedframecounter>
+               <inputcounter>
+                  <current>0</current>
+                  <default>0</default>
+                  <command>SetEA4ResetCounterInputCounter</command>
+                  <parameter>0</parameter>
+                  <parameter>1</parameter>
+                  <help>"0: disabled 1: enabled"</help>
+               </inputcounter>
+               <help>"dependency ea functionresetcounter xml-section"</help>
+            </resetcounter>
+         </ea4>
+      </usrio>
+   </settings>
+</device>
