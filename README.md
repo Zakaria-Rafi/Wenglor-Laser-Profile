@@ -1,4 +1,4 @@
-![image](https://github.com/Zakaria-Rafi/Wenglor-Laser-Profile/assets/124291570/84e23a76-c606-44fb-942e-cfd75fdab6de)# Wenglor-Laser-Profile
+# Wenglor-Laser-Profile
 Pendant cette période, j'ai travaillé sur deux projets distincts, tous deux liés à l'usage des capteurs lasers faisceau. 
 Ces capteurs permettent de faire des mesures de déplacement simultanées de plusieurs point situés sur une même ligne. 
 Ils sont installés sur des maquettes embarquées en centrifugeuse pour mesurer des profils de sols
@@ -35,7 +35,11 @@ Version avancée:
 
 
 Version Final : 
+![image](https://github.com/Zakaria-Rafi/Wenglor-Laser-Profile/assets/124291570/cf18b1f2-e60b-4de5-8995-d835d2c48ab6)
 
+
+Menu : 
+![image](https://github.com/Zakaria-Rafi/Wenglor-Laser-Profile/assets/124291570/5c142499-ddbe-417a-9029-bc662057c75f)
 
 fonctionnalité : 
 ![fonctionnalité](https://github.com/Zakaria-Rafi/Wenglor-Laser-Profile/assets/124291570/2fa5689f-4744-43d0-ad9c-83d28771750a)
